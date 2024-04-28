@@ -63,37 +63,37 @@
   },
 
   "custom/cpu": {
-    "exec": "/home/joppe/repos/configs/Scripts/waybar/cpu-temp.sh",
+    "exec": "~/.config/waybar/cpu-temp.sh",
     "interval": 5,
     "format": "<span font='18' rise='-3000'>󰻠</span>{} "
   },
 
   "custom/gpu": {
-    "exec": "/home/joppe/repos/configs/Scripts/waybar/gpu-temp.sh",
+    "exec": "~/.config/waybar/gpu-temp.sh",
     "interval": 5,
     "format": "<span font='16' rise='-2000'></span>{}"
   },
 
   "custom/water": {
-    "exec": "/home/joppe/repos/configs/Scripts/waybar/water-temp.sh",
+    "exec": "~/.config/waybar/water-temp.sh",
     "interval": 5,
     "format": "<span font='18' rise='-3000'>󰖌</span>{}"
   },
 
   "custom/pump": {
-    "exec": "/home/joppe/repos/configs/Scripts/waybar/pump.sh",
+    "exec": "~/.config/waybar/pump.sh",
     "interval": 5,
     "format": " <span font='16' rise='-2000'>󱩃</span> {}"
   },
 
   "custom/fans": {
-    "exec": "/home/joppe/repos/configs/Scripts/waybar/fans.sh",
+    "exec": "~/.config/waybar/fans.sh",
     "interval": 5,
     "format": " <span font='16' rise='-2000'>󰈐</span> {}"
   },
 
   "custom/memory": {
-    "exec": "/home/joppe/repos/configs/Scripts/waybar/memory.sh",
+    "exec": "~/.config/waybar/memory.sh",
     "interval": 5,
     "format": " <span font='16' rise='-2000'>󰍛</span> {}"
   },
