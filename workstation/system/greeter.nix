@@ -1,4 +1,4 @@
-# NixOS greeter configuration
+# NixOS workstation greeter configuration
 
 { config, pkgs, ... }:
 

@@ -24,7 +24,7 @@
       inherit system;
       modules = [ 
         ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay-stable ]; })
-        ./configuration.nix 
+        ./system/configuration.nix 
         home-manager.nixosModules.home-manager
       ];
     };
