@@ -29,7 +29,6 @@
     # Emulators
     duckstation
     pcsx2
-    rpcs3
     dolphin-emu
     
     # Benchmarking

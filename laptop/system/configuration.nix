@@ -1,4 +1,4 @@
-# NixOS workstation config
+# NixOS laptop config
 
 { config, pkgs, ... }:
 
@@ -13,7 +13,7 @@
       ./../../common/system/environment.nix
       # Gaming
       ./../../common/system/gaming.nix
-      # greeter settings
+      # Greeter settings
       ./greeter.nix
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -23,20 +23,18 @@
       ./../../common/system/locale.nix
       # Network settings
       ./../../common/system/network.nix
-      # OpenRGB settings
-      ./openrgb.nix
       # Packages
       ./../../common/system/packages.nix
-      # Workstation-specific packages
+      # Laptop-specific packages
       ./packages.nix
       # Sound settings
       ./../../common/system/sound.nix
       # Swap settings
       ./swap.nix
+      # tlp settings
+      ./tlp.nix
       # User settings
       ./../../common/system/users.nix
-      # Virtualisation settings
-      ./virtualisation.nix
       # Wayland settings
       ./../../common/system/wayland.nix
       # X11 settings
@@ -44,7 +42,7 @@
       # Import home-manager settings
       ./../home/home.nix
     ];
-
+  
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

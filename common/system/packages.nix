@@ -35,7 +35,7 @@
 
     htop = {
       enable = true;
-      package = pkgs.htop
+      package = pkgs.htop;
     };
 
     git.enable = true;
@@ -104,9 +104,6 @@
     phinger-cursors
     cinnamon.mint-y-icons
     nerdfonts
-
-    # Python
-    (python312.withPackages (subpkgs: with subpkgs; [ liquidctl docopt psutil ]))
 
     # Benchmarking
     s-tui
