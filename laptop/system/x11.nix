@@ -9,9 +9,6 @@
     enable = true;
     xkb.layout = "us";
     xkb.variant = "";
-    libinput.touchpad.additionalOptions = ''
-      Option "Tapping" "on"
-    '';
     excludePackages = [ pkgs.xterm ];
     windowManager = {
       i3.enable = true;
@@ -49,4 +46,9 @@
       Option "DRI" "3"
     '';
   };
+
+  # Configure laptop touchpad.
+  services.libinput.touchpad.additionalOptions = ''
+    Option "Tapping" "on"
+  '';
 }
