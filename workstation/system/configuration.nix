@@ -40,6 +40,8 @@
       # Wayland settings
       ./../../common/system/wayland.nix
       # X11 settings
+      ./../../common/system/x11.nix
+      # Workstation-specific X11 settings
       ./x11.nix
       # Import home-manager settings
       ./../home/home.nix

@@ -7,22 +7,43 @@
   home-manager.users.joppe = { pkgs, ... }: {
     home.packages = [ ];
     imports = [
+      # Alacritty settings
       ./../../common/home/alacritty.nix
+      # Bash settings
       ./bash.nix
+      # Dunst settings
       ./../../common/home/dunst.nix
+      # Git settings
       ./../../common/home/git.nix
-      #./hypr.nix
+      # Hyprland settings
+      ./../../common/home/hypr.nix
+      # Laptop-specific Hyprland settings
+      ./hypr.nix
+      # i3 settings
       #./i3.nix
+      # Mako settings
       ./../../common/home/mako.nix
+      # mpv settings
       ./../../common/home/mpv.nix
+      # Polybar settings 
       #./polybar.nix
-      #./qtile.nix
+      # Qtile settings
+      ./qtile.nix
+      # Rofi settings
       ./../../common/home/rofi.nix
-      #./swayfx.nix
+      # SwayFX settings
+      ./../../common/home/swayfx.nix
+      # Laptop-specific SwayFX settings
+      ./swayfx.nix
+      # Theme settings
       ./../../common/home/theming.nix
+      # Waybar settings
       #./waybar.nix
+      # Wofi settings
       ./../../common/home/wofi.nix
+      # Xinitrc settings
       ./../../common/home/xinitrc.nix
+      # Yazi settings
       ./../../common/home/yazi.nix
     ];
 
