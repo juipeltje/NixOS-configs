@@ -20,6 +20,8 @@
       # Workstation-specific Hyprland settings
       ./hypr.nix
       # i3 settings
+      ./../../common/home/i3.nix
+      # Workstation-specific i3 settings
       ./i3.nix
       # Mako settings
       ./../../common/home/mako.nix

@@ -1,4 +1,4 @@
-# NixOS Workstation Waybar configs
+# NixOS laptop Waybar configs
 
 { config, pkgs, ... }:
 
@@ -17,9 +17,9 @@
     };
 
     # Hyprland waybar styles
-    "waybar/hyprland-style-gruv.css" = {
+    "waybar/hyprland-style-gruvbox.css" = {
       enable = true;
-      source = ./waybar/hyprland-style-gruv.css;
+      source = ./waybar/hyprland-style-gruvbox.css;
     };
 
     "waybar/hyprland-style-nordic.css" = {
@@ -79,39 +79,6 @@
         #!/usr/bin/env bash
 
         sensors | awk '/edge/ {print $2}' | sed 's/+/ /'
-      '';
-    };
-
-    # Water temperature
-    "waybar/water-temp.sh" = {
-      enable = true;
-      executable = true;
-      text = ''
-        #!/usr/bin/env bash
-
-        sensors | awk '/Coolant/ {print $2}' | sed 's/+/ /'
-      '';
-    };
-
-    # AIO pump speed
-    "waybar/pump.sh" = {
-      enable = true;
-      executable = true;
-      text = ''
-        #!/usr/bin/env bash
-
-        sensors | awk '/Pump/ {print $2" "$3}'
-      '';
-    };
-
-    # Fan speed
-    "waybar/fans.sh" = {
-      enable = true;
-      executable = true;
-      text = ''
-        #!/usr/bin/env bash
-
-        sensors | awk '/fan2/ {print $3" "$4}'
       '';
     };
 

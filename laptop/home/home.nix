@@ -20,7 +20,9 @@
       # Laptop-specific Hyprland settings
       ./hypr.nix
       # i3 settings
-      #./i3.nix
+      ./../../common/home/i3.nix
+      # Laptop-specific i3 settings
+      ./i3.nix
       # Mako settings
       ./../../common/home/mako.nix
       # mpv settings
@@ -38,7 +40,7 @@
       # Theme settings
       ./../../common/home/theming.nix
       # Waybar settings
-      #./waybar.nix
+      ./waybar.nix
       # Wofi settings
       ./../../common/home/wofi.nix
       # Xinitrc settings

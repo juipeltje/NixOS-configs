@@ -58,6 +58,7 @@ in
         { output = "DP-1"; workspace = "${ws7}"; }
         { output = "DP-2"; workspace = "${ws8}"; }
       ];
+    };
   };
 
   # Autostart script
