@@ -28,7 +28,7 @@
       # mpv settings
       ./../../common/home/mpv.nix
       # Polybar settings 
-      #./polybar.nix
+      ./polybar.nix
       # Qtile settings
       ./qtile.nix
       # Rofi settings
