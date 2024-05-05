@@ -29,6 +29,8 @@
       ./../../common/system/packages.nix
       # Workstation-specific packages
       ./packages.nix
+      # Single gpu passthrough settings
+      ./single-gpu-passthrough.nix
       # Sound settings
       ./../../common/system/sound.nix
       # Swap settings
