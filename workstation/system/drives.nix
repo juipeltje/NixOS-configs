@@ -13,13 +13,6 @@
       fsType = "ext4";
       label = "6TB-HDD";
     };
-
-    "VM-SSD" = {
-      mountPoint = "/VM-SSD";
-      device = "/dev/disk/by-uuid/45c4df5b-758f-4fdf-bdae-ee39f4c0a076";
-      fsType = "ext4";
-      label = "VM-SSD";
-    };
   };
 
   # Enable gvfs

@@ -125,6 +125,7 @@
     monero-gui
     vscodium-fhs
     autotiling
+    psmisc
   ];
 }
 
