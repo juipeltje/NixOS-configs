@@ -1,4 +1,4 @@
-# Nix Steam Deck dotfiles
+# Home Manager Bash configuration
 
 { config, pkgs, ... }:
 
@@ -6,7 +6,7 @@
   home.file = {
     ".bashrc" = {
       enable = true;
-      source = ./../../../steam-deck/home/.bashrc;
+      source = ./../../../../dotfiles/common/.bashrc;
     };
   };
 }
